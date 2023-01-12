@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>GALLERY</title>
+<link href="ASSET/CSS/cssstyle.css"rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+<a name="anchor"></a>
+<br>
+
+<div id="navbar">
+  <a href="index.html" id="logo">NURIN.RESUME</a>
+  <div id="navbar-right">
+    <a href="biodata.html">Biodata</a>
+    <a href="education.html">Education</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "50px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
+
+<!-- Header -->
+<div style="margin-top:150px;font-size:30px">
+<div class="header" id="myHeader" align="center">
+  <h1>GALLERY</h1>
+  <p>Some memories of me with my family and friends throughout the years <3 </p>
+  <p> -play some music while scrolling my gallery- <p>  
+  <audio autoplay controls loop>
+     <source src="ASSET/AUDIO/EXODONTGO.mp3" type="audio/mp3"> 
+  </audio><br><br>
+ 
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+
+<!-- Photo Grid -->
+<div class="rowgallery" align="center"> 
+  <div class="columngallery">
+    <img src="ASSET/IMAGES/nurinabahmama.jpg" style="width:120%">
+    <img src="ASSET/IMAGES/rayawithhasbie.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/abahmamame.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/friends.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/314event.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/abahmama.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurin2.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurinarisu.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/me.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/sem4.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurinhaziq.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/familyraya2022.jpg" style="width:100%">
+
+  </div>
+  <div class="columngallery">
+    <img src="ASSET/IMAGES/mama2.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurin3.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/bukitmerah.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/highschoolfriends.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/meandkakak.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/familypantai.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurinblack.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/familypantai2.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurinari.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurinariiman.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurin4.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/uitmraya.jpg" style="width:100%">
+  </div>  
+  <div class="columngallery">
+    <img src="ASSET/IMAGES/nurinimanpantai.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurinimanarisu.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/zumba.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/raya2021.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/angahmamaabah.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/pantaiabahmama.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/pantaifriends.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/spm.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/sem4mrsham.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/filmcamera.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/merbokkaryaku.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/terengganu.jpg" style="width:100%">
+  </div>
+  <div class="columngallery">
+   <img src="ASSET/IMAGES/muet.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/zumbanurin.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/tanjungdawai.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/pantailagi.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurin5.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/library.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurin6.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/familyraya2021.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/ariimannurin.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/nurin7.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/casing.jpg" style="width:100%">
+    <img src="ASSET/IMAGES/classmates.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="columngallery"
+var elements = document.getElementsByClassName("columngallery");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+<center><a href="#anchor"> <img src="ASSET/IMAGES/arrow.png" width="5%" ></a></center>
+
+<footer>
+  <div class="footer" align="center">
+     <a href="https://wa.me/601137263166/" target="_blank"> <img src="ASSET/IMAGES/footerwhatsapp.png" width="80px" height="80px"></a>
+     <a href="https://www.instagram.com/nrn.syfqh_/" target="_blank"> <img src="ASSET/IMAGES/footerinstagram.png" width="80px" height="80px"></a>
+     <a href= "https://twitter.com/jnsyj23" target="_blank"> <img src="ASSET/IMAGES/footertwitter.png" width="80px" height="80px"></a>
+     <a href= "https://www.facebook.com/nurin.syafiqah.39904" target="_blank"> <img src="ASSET/IMAGES/footerfacebook.png" width="80px" height="80px"></a>
+   </div>   
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>

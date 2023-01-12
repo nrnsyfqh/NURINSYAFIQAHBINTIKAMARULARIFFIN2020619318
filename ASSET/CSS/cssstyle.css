@@ -1,0 +1,585 @@
+<style>
+
+/* HOMEPAGE */
+
+/* TOP NAVIGATION */
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  background: #FFFFFF;
+  font-family: georgia, sans-serif;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #ECC0B0;
+  padding: 20px 10px;
+  transition: 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 30px;
+  font-weight: none;
+  transition: 0.3s;
+}
+
+#navbar a:hover {
+  color: #F9E4D0;
+  text-decoration: underline;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+  margin-right: 20px;
+}
+
+/* INTRO HOMEPAGE */
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; 
+}
+
+.containerimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: 10%;
+}
+
+img {
+  max-width: 60%;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.text {
+  color: #9C3940;
+  font: italic 25px "georgia";
+  margin-right: 95px;
+  margin-left: 50px;
+}
+
+
+/* BUTTON ABOUT ME */
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font: 15px "georgia";
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #ECC0B0;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #9C3940;
+}
+
+.button:hover {background-color: #F9E4D0}
+
+.button:active {
+  background-color: #F9E4D0;
+  box-shadow: 0 5px #9C3940;
+  transform: translateY(4px);
+}
+
+a {
+  text-decoration: none;
+  color: black; 
+}
+
+/* DIV PINK BGCOLOR (QUOTES) */
+
+.full-height {
+  width: 100%;
+  height: 30%;
+  margin-top: 0%;
+  background: #F9E4D0;
+  font: italic 25px "georgia";
+}
+
+
+/* DIV EDUCATION */
+
+.education {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+imgeducation {
+  max-width: 100%
+}
+      
+.imageeducation {
+  flex-basis: 90%;
+  padding-right: 70px;
+  order: 2;
+}
+
+.educationtext {
+  color: #9C3940;
+  padding-left: 100px;
+  font: italic 25px "georgia";
+}
+
+/* DIV FAMILY */
+
+.family {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+imgfamily {
+  max-width: 100%;
+}
+
+.imagefamily {
+  flex-basis: 90%;
+  margin-left: 10px;
+}
+
+.textfamily {
+  font: italic 25px "georgia";
+  padding-right: 45px;
+}
+
+
+
+/* DIV GALLERY */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.galleryhome {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+.clearfixhome::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin: 0px;
+}
+
+.textgallery {
+  font: italic 25px "georgia";
+  align: center;
+}
+
+
+
+
+/* EDUCATION */
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #F9E4D0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #9C3940;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #F9E4D0;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #F9E4D0 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #F9E4D0;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 12px 12px #ECC0B0; 
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+picsedu {
+ padding-left: 20px;
+ padding-right:20px;
+}
+
+picsedu1 {
+ padding-left: 60px;
+ padding-right:20px;
+}
+
+picsedu2 {
+ padding-left: 20px;
+ padding-right:20px;
+}
+
+/* GALLERYWEBSITE */
+
+/* GALLERY */
+
+
+.headergallery {
+  text-align: center;
+  padding: 32px;
+}
+
+.rowgallery {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.columngallery {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+  padding-right: 80px;
+}
+
+.columngallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+/* HOBBY */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* CONTACT */
+
+piccontact {
+  padding-right: 80px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.bullet {
+  text-align: center; 
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+  list-style-type: circle;
+  margin-top: 0px;
+}
+
+ul.myUL: hover {
+  background-color: #F9E4D0;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ECC0B0;
+}
+
+/* selected link */
+a:active {
+  color: #9C3940;
+}
+
+
+
+/* Footer */
+
+footer {
+   max-width: 100%;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ECC0B0;
+   text-align: center;
+}
+
+
+
+/* BIODATA */
+
+h1 {
+  font-family: 'georgia', serif;
+  color: #9C3940;
+}
+
+p {
+  font-family: 'georgia', sans-serif;
+  text-align: center;
+  font-size: 19px;
+  line-height: 25px;
+  color: black;
+  margin: 15px 0;
+  text-indent: 30px;
+}
+
+.horizontal_line {
+  background-color: #ECC0B0;
+  width: 100%;
+  height: 5px;
+  line-height: 100%;
+}
+  
+.line {
+  border-bottom: 5px #C19A6B;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../../ASSET/IMAGES/nurin_syafiqah.jpg");
+
+  /* Full height */
+  height: 80%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  max-width: 65%;
+  padding-left: 45px;
+}
+
+.leftcolumnaboutme {   
+  float: left;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  max-width: 35%;
+  padding-left: 20px;
+}
+
+pic {  
+  padding-left: 60px;
+}
+
+pics {  
+  padding-left: 5px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #F9E4D0;
+   padding: 20px;
+   margin-top: 20px;
+   border-radius: 20px;
+   box-shadow: 9px 10px #ECC0B0; 
+   max-width: 100%;
+}
+
+.cardcolumn {   
+  float: left;
+  width: 100%;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    max-width: 100%;
+    padding: 0;
+  }
+
+
+
+
+
+</style>

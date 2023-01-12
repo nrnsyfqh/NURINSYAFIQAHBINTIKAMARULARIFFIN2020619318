@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>BIODATA</title>
+<link href="ASSET/CSS/cssstyle.css"rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+<a name="anchor"></a>
+<br>
+
+<div id="navbar">
+  <a href="index.html" id="logo">NURIN.RESUME</a>
+  <div id="navbar-right">
+    <a href="biodata.html">Biodata</a>
+    <a href="education.html">Education</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "50px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
+
+<br>
+
+<div class="parallax"></div>
+  <div style="height:100px;background-color:white;font-size:20px">
+<marquee width="100%" direction="right" height=100px" scrollamount="15" >
+         <h1>Here you will find all the fun facts and highlights of my life!</h1>
+      </marquee>
+</div>
+<div class="horizontal_line"></div>
+    <div class="line"></div><br>
+
+    
+<div class="row">
+  <div class="leftcolumnaboutme">
+    <div class="card">
+      <h2 align="center">ABOUT ME</h2>
+      <p>My name is Nurin Syafiqah Binti Kamarul Ariffin. I am 20 years old this year and was born in Taiping, Perak. However, I live in Kulim Kedah since I was born. I am an Information Management student and currently studying in Universiti Teknologi Mara Kedah. I have four siblings and I am the second child. I have a younger brother and a younger sister. I am closest to my younger sister because I have been taking care of her since she was born. Actually, I don't really know how to introduce myself but one thing I know for sure is that I am an introvert person. I will become awkward while speaking to a stranger yet will instantly feel at ease with someone I know. I love staying at home and rarely go out unless someone is asking me to hangout.</p>
+</div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 align="center">FUN FACTS</h2>
+       <p> Little fun facts about me is I love music. I love listening to kpop especially a boy group called EXO. I have been stanning and listening to their music since I was 11 years old. Their music has such a wide range! I adore how new music is constantly being produced in all genres. I enjoy listening to various kinds of music, but R&B is one of my favorite genre.</p>
+
+       <p>Another fun facts about me is I have 3 things that I have been obssesing with. First, coffee. Coffee is something I can have every single day. Iced lattes and cappuccinos are my favorites. But lately, I've avoided drinking as much coffee as I once did because it could be bad for my health.</p> 
+
+      <pic><img src="ASSET/IMAGES/kopi.jpg"  style="width:25%" border=2px black>
+      <img src="ASSET/IMAGES/kopi2.jpg"  style="width:25%" border=2px black></pic>
+<br>
+
+</div>
+</div>
+
+     
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h3 align="center">My Top 3 Favorite Songs</h3>
+      <ol>
+            <li><p>Growl by EXO</p><audio controls><source src="ASSET/AUDIO/EXOGROWL.mp3" type="audio/mp3"></audio></li>
+            <li><p>You Belong With Me by Taylor Swift</p><audio controls><source src="ASSET/AUDIO/YBWMTAYLORSWIFT.mp3" type="audio/mp3"></audio></li>
+            <li><p>Beside You by Keshi</p><audio controls><source src="ASSET/AUDIO/KESHIBESIDEYOU.mp3" type="audio/mp3" ></audio></li>
+           </ol>
+    </div>
+    <div class="card">
+      <h3 align="center">My 21<sup>st</sup> Birthday!</h3>
+      <p align="center" id="demo"></p>
+   </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumnaboutme">
+    <div class="card">
+      <h2 align="center">FUN FACTS</h2>
+      <p>Second, I really like beach, where the sky and the sea meet. I could enjoy the view there all day long. I'm always at ease and at peace when I hear the waves. When someone asks me where my favourite  place is, I will always say the beach. </p>
+
+         <center><video width= "30%" controls loop muted autoplay>
+            <source src="ASSET/VIDEO/beach.mp4" type="video/mp4"></video><p>Pantai Batu Buruk, Terengganu</a></p></center>
+         
+<hr>
+
+<p>Nephophilias are for a person who love clouds. Yes, I'm a nephophlia. I love clouds. I have tons of cloud pictures in my phone. Did you know that, they are ten types of clouds? My favorite types of clouds is the cumulus one! Usually seen in fair weather, cumulus clouds are individual, detached, cauliflower-shaped clouds.  </p>
+
+<pics> <img src="ASSET/IMAGES/cloud1.jpg"  style="width:25%" border=2px black>
+      <img src="ASSET/IMAGES/cloud2.jpg"  style="width:25%" border=2px black>
+      <img src="ASSET/IMAGES/cloud3.jpg"  style="width:25%" border=2px black>
+</pics>
+</div>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 22, 2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<center><a href="#anchor"> <img src="ASSET/IMAGES/arrow.png" width="5%" ></a></center>
+
+<footer>
+  <div class="footer" align="center">
+     <a href="https://wa.me/601137263166/" target="_blank"> <img src="ASSET/IMAGES/footerwhatsapp.png" width="80px" height="80px"></a>
+     <a href="https://www.instagram.com/nrn.syfqh_/" target="_blank"> <img src="ASSET/IMAGES/footerinstagram.png" width="80px" height="80px"></a>
+     <a href= "https://twitter.com/jnsyj23" target="_blank"> <img src="ASSET/IMAGES/footertwitter.png" width="80px" height="80px"></a>
+     <a href= "https://www.facebook.com/nurin.syafiqah.39904" target="_blank"> <img src="ASSET/IMAGES/footerfacebook.png" width="80px" height="80px"></a>
+   </div>   
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
